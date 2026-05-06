@@ -26,6 +26,8 @@ After setting up the required resources in AWS, this script needs to be updated 
 
 Look for the `STREAM_NAME` and `REGION` variables in the script and update them with your Kinesis Data Stream name and AWS region.
 
+You must have an active client session with AWS configured on your machine for the script to work, as it uses the `boto3` library to interact with AWS services. This can be done by running `aws login` in your terminal and following the prompts to authenticate with your AWS account.
+
 Once you have updated the script, you can run it to start generating and sending data to your Kinesis Data Stream:
 
 ```bash
